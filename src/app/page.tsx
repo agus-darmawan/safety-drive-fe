@@ -10,7 +10,7 @@ export default function Home() {
     <main className="min-h-screen flex items-center justify-center bg-white ">
       <div className="grid grid-cols-2 w-full mx-24 gap-20">
         <div>
-          <h1 className="text-7xl font-extrabold drop-shadow-2xl [text-shadow:_0_5px_0_rgb(0_0_0_/_40%)]">
+          <h1 className="text-7xl font-extrabold drop-shadow-2xl [text-shadow:_0_5px_5px_rgb(0_0_0_/_40%)]">
             Safety Drive
           </h1>
           <p className="text-lg pt-16 text-justify">

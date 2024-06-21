@@ -11,20 +11,16 @@ type Link = {
       href: '/',
     },
     {
-      label: 'List Pelanggaran',
-      href: '/listpelanggaran',
+        label: 'About',
+        href: '/about',
+      },
+    {
+      label: 'Violation Record',
+      href: '/vilationrecord',
     },
     {
-      label: 'Kontak',
+      label: 'Contact',
       href: '/contact',
-    },
-    {
-      label: 'Bantuan',
-      href: '/help',
-    },
-    {
-      label: 'Login',
-      href: '/login',
     },
   ];
   
