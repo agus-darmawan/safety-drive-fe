@@ -45,21 +45,21 @@ const Header: React.FC = () => {
                   key={index}
                   label={link.label}
                   href={link.href}
-                  className="text-lg font-semibold text-black hover:text-purple-700 transition-colors duration-300"
+                  className="text-lg font-semibold transition-colors duration-300"
                 />
               )
           )}
           {loggedIn ? (
             <Button
               onClick={handleLogout}
-              className="rounded-full bg-green-500 px-3 md:px-5 font-semibold text-white hover:bg-green-400 text-sm py-2"
+              className="rounded-full bg-[#F5F91E] px-3 md:px-5 font-semibold text-black hover:bg-green-400 text-sm py-2 shadow-lg"
             >
               Logout
             </Button>
           ) : (
             <Button
               onClick={handleOpenModal}
-              className="rounded-full bg-green-500 px-3 md:px-5 font-semibold text-white hover:bg-green-400 text-sm py-2"
+              className="rounded-full bg-[#F5F91E] px-3 md:px-5 font-semibold text-black hover:bg-green-400 text-sm py-2 shadow-lg"
             >
               Login
             </Button>

@@ -1,17 +1,41 @@
-// NavLinks.tsx
-import React from "react";
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { FC } from "react";
 
-export interface INavLinksProps {
+import { cn } from "@/lib/utils";
+
+interface INavLinkProps {
   label: string;
   href: string;
   className?: string;
+  activeClassName?: string;
+  inactiveClassName?: string;
 }
 
-const NavLinks: React.FC<INavLinksProps> = ({ label, href, className }) => {
+const NavLinks: FC<INavLinkProps> = ({
+  label,
+  href,
+  className,
+  activeClassName,
+  inactiveClassName,
+}) => {
+  const route: string = usePathname();
+  const isActive = href === "/" ? route === "/" : route.includes(href);
+
   return (
-    <a href={href} className={`nav-link ${className || ""}`}>
+    <Link
+      href={href}
+      className={cn(
+        className,
+        "text-sm md:text-lg md:font-semibold",
+        isActive
+          ? activeClassName || " text-blue-500"
+          : inactiveClassName || "hover:text-violet-400 text-white"
+      )}
+    >
       {label}
-    </a>
+    </Link>
   );
 };
 
