@@ -7,7 +7,6 @@ import StoreInitializer from "@/store/StoreInitializer";
 import { useAuth } from "@/hooks/useAuth";
 import { unstable_noStore as noStore } from "next/cache";
 import Navbar from "@/components/Navbar";
-import "@radix-ui/themes/styles.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,8 +14,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "UMKM Gebang Putih",
-  description: "Umkm gebang putih",
+  title: "Safety Riding",
+  description: "Safety Riding",
 };
 
 export default async function RootLayout({
