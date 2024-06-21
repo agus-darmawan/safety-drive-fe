@@ -10,6 +10,7 @@ const config = {
 	],
   prefix: "",
   theme: {
+    
     container: {
       center: true,
       padding: "2rem",
@@ -18,6 +19,11 @@ const config = {
       },
     },
     extend: {
+        textShadow: {
+          sm: '0 1px 2px var(--tw-shadow-color)',
+          DEFAULT: '0 2px 4px var(--tw-shadow-color)',
+          lg: '0 8px 16px var(--tw-shadow-color)',
+        },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

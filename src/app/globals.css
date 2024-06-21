@@ -72,5 +72,10 @@
     }
     body {
       @apply bg-background text-foreground;
+      .yt-lite::before {
+        content: none !important;
+      }
     }
   }
+
+  /* Apply shadow to Youtube Embed */
