@@ -62,7 +62,7 @@ export default function ForgotPassword({ setAuthState }: ForgotPasswordProps) {
           <Button
             disabled={isSubmitting}
             type="submit"
-            className="w-full bg-green-500 hover:bg-green-400"
+            className="w-full bg-[#28BCD0]  hover:bg-[#28BCD0]/80 "
           >
             Forgot Password
           </Button>

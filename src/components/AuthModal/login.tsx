@@ -80,7 +80,7 @@ export default function Login({ setAuthState }: LoginProps) {
           <Button
             disabled={isSubmitting}
             type="submit"
-            className="w-full bg-green-500 hover:bg-green-400"
+            className="w-full bg-[#28BCD0]  hover:bg-[#28BCD0]/80"
           >
             Login
           </Button>

@@ -40,7 +40,8 @@ const Header: React.FC = () => {
         <div className="flex gap-6 items-center">
           {links.map(
             (link, index) =>
-              link.label !== "Login" && (
+              ((!loggedIn && link.label === "Home") ||
+                (link.label !== "Login" && loggedIn)) && (
                 <NavLinks
                   key={index}
                   label={link.label}

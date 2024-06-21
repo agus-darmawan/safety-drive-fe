@@ -24,6 +24,7 @@ export default function Home() {
           <div className="flex flex-row w-full justify-between pt-20">
             {images.map((image, index) => (
               <Image
+                key={index}
                 src={`/${image.name}`}
                 alt={`Image ${index + 1}`}
                 width={120}
