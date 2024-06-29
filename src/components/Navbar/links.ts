@@ -19,6 +19,10 @@ type Link = {
       href: '/vilationrecord',
     },
     {
+      label: 'Status',
+      href: '/statuses',
+    },
+    {
       label: 'Contact',
       href: '/contact',
     },
